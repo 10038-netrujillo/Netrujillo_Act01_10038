@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div class="form">
+		<form>
+			<fieldset>
+				<legend>Datos Básicos</legend>
+				<label for="nom_produc">Nombre del Producto</label>
+				<input type="text" id="nom_produc" name="calle_principal"><br><br>
+				<label for="desc">Descripción:</label><br>
+				<textarea id="desc" maxlength="50" name="txtaDescripcion" required></textarea>
+				<br><br>
+			    Foto:<br>
+			    <input id="foto" type="file" name="foto" required><br><br>
+			    <input id="confiCheckbox" type="checkbox" name="confi" value="Logistica">Añadir información confidencial	
+			</fieldset><br><br>
+			<fieldset>
+				<legend>Datos Económicos</legend>
+				<label>Precio: </label>
+				<input id="precio" type="number" value="" min="100" max="200" required> $
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label>Impuestos: </label>
+          		<select name="cmbImpuesto" id="impuesto">
+  					<option value="4">4%</option>
+  					<option value="7">7%</option>
+  					<option value="16">16%</option>
+  					<option value="25">25%</option>
+				</select><br>
+				<label>Promoción</label><br>
+				    <input type="radio" name="rbPromocion" value="Ninguno" id="Económico3" checked>Ninguno<br>
+				    <input type="radio" name="rbPromocion" value="Gratuito" id="Económico3">Tranporte Gratuito<br>
+				    <input type="radio" name="rbPromocion" value="Descuento" id="Económico3">Descuento 5%<br>
+			</fieldset>
+			<br>
+			  <input type="submit" name="btnGuardar" value="Guardar Cambios">
+			  <input type="reset" name="btnReset" value="Borrar los datos introducidos">
+			  <br><br>
+		</form>
+	</div>
+	<a href="../index.html">Home Page</a>
+</body>
+</html>

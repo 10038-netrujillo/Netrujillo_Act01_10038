@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<script src="../js/main.js"></script>
+  	<link rel="stylesheet" href="../css/estilo.css">
+  	<title>Formulario Registro</title>
+  </head>
+  <body>
+  	<div class="form">
+		<form>
+			<fieldset>
+				<legend>DIRECCION DE ENVIO</legend>
+				<label for="calle_principal">Calle Principal</label><br>
+				<input type="text" id="calle_principal" name="calle_principal"><br><br>
+				<label for="transversal">Transversal</label><br>
+				<input type="text" id="transversal" name="transversal"><br><br>
+				<input type="checkbox" id="propietarioCheckbox" name="propietario" value="propietario" onchange="enableSubmitButton()"> Entrega al propietario <br>
+				<input type="checkbox" id="terceroCheckbox" name="propietario" value="tercero" onchange="toggleConfidentialForm()"> Entrega a un tercero <br><br>
+				<label for="cantones">Cantones:</label>
+				<select id="cantones" name="cantones">
+					<option value="quito">Quito</option>
+					<option value="guayaquil">Guayaquil</option>
+					<option value="cuenca">Cuenca</option>
+					<option value="ambato">Ambato</option>
+				</select><br><br>
+				<input type="submit" id="submitButton" value="ENVIAR DATOS" disabled>
+			</fieldset>
+		</form>
+	</div><br><br>
+	<div id="confidentialForm" style="display: none;">
+		<form>
+			<fieldset>
+				<legend>INFORMACIÓN CONFIDENCIAL</legend>
+				<label>Código Postal:</label>
+				<input type="text" name="codigo"><br><br>
+				<label for="referencia">Referencia de la Dirección:</label><br>
+				<textarea id="referencia" name="referencia"></textarea><br><br>
+				<input type="button" value="Guardar">
+			</fieldset>
+		</form>
+	</div><br><br>
+	<a href="../index.html">Home Page</a>
+  </body>
+  </html>
