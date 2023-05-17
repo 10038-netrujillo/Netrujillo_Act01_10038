@@ -14,7 +14,8 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: sans-serif;
-  width: 330px;
+  width: 500px;
+  height: 400px;
 }
 
 .titulo {
@@ -34,8 +35,8 @@ body {
   padding: 5px;
   border: 1px solid #999999;
   border-radius: 3px;
-  width: 97%;
-  font-size: 16px;
+  width: 96%;
+  font-size: 18px;
 }
 
 .formulario input[type="submit"] {
@@ -46,4 +47,5 @@ body {
   border-radius: 18px;
   cursor: pointer;
   width: 100%;
+  font-size: 16px;
 }
